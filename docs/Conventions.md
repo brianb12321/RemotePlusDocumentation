@@ -1,4 +1,4 @@
-##Different types of blocks.
+## Different types of blocks.
 The documentation on this site utilizes blocks to draw the attention of noteworthy information to the reader's eyes.
 !!! tip
     Sometimes I will tell you cool features about RemotePlus. Find tid-bits in this block.

@@ -1,4 +1,4 @@
-#Overall Process
+# Overall Process
 Depending on the server core loaded on the server, the process varies, but the general phases includes the following:
 
   * Building the IoC container
@@ -80,7 +80,7 @@ Your configuration file should look like the following:
 !!! important
     Currently RemotePlus will not start if your config file has been damaged, or the folder in which the config file should be loaded does not exist.
 
-##Loading Known Types
+## Loading Known Types
 The WCF runtime uses SOAP as its underlying data structure. When a message gets sent over the wire, the WCF runtime must serialize the whole object graph and transmit it over the communication channel, then
 the runtime will need to deserialize the object graph and rebuild it on the other side. During serialization, the `DataContractSerializer` must know ahead of time what types of objects can be serialized.
 This is expecially important when dealing with inheritance, because the serializer must know about the sub types for it to support inheritance.
@@ -89,7 +89,7 @@ In order to satisfy the serializer's requirement, all extensions that will trans
 !!! warning
     If a component fails to register a custom type and tries to serialize it over the wire, the communication channel will transition into the faulted state and must be disposed.
 
-##Loading Resource File
+## Loading Resource File
 RemotePlus loads all custom resources from the `GlobalResources.rpr` file when starting. Resources are used for storing music, files, strings, etc. for use later or for easy retrieval.
 You can give a command a resource as a placeholder for values or even a placeholder for entire files!
 
@@ -103,7 +103,7 @@ You can give a command a resource as a placeholder for values or even a placehol
 !!! hint
     Use the `$` prefix to reference a resource in a command.
 
-##Loading Scripting Engine
+## Loading Scripting Engine
 The `DefaultServerCore.dll` will bind the scripting service to the default scripting engine, which is IronPython. IronPython is an open-source project that allows .NET developers to integrate Python into
 their code. A .NET developer can expose APIs for scripts to consume, thus allowing an application to be extendable.
 RemotePlus allows script writers to automate server tasks or create whole new APIs for RemotePlus.

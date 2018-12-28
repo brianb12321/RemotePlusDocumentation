@@ -1,11 +1,11 @@
-#What is RemotePlus
+# What is RemotePlus
 RemotePlus is a remote-control solution/api. RemotePlus is designed to be lightweight, yet powerful.
 
 !!! note
     RemotePlus uses the MIT license. Please read the license file or visit the [open source page](https://opensource.org/licenses/MIT)
-#Prerequisites
+# Prerequisites
 Like any software, RemotePlus needs a few pieces of software in order to function properly. RemotePlus requires both hardware and software in order to work properly.
-##Software
+## Software
 You will need to install .NET Framework 4.7.1 on all machines running RemotePlus
 
 !!! warning
@@ -16,7 +16,7 @@ RemotePlus was designed with as few external dependencies required for you, the 
 !!! inportant
     Any extensions you install onto the server may require you to install external dependencies.
 
-##Hardware
+## Hardware
 The only hardware prerequisites required are the ones that you needed to install Word.
 But the difference between Word and RemotePlus is RemotePlus requires a working network card to communicate with other servers and the client.
 
@@ -27,7 +27,7 @@ But the difference between Word and RemotePlus is RemotePlus requires a working 
 !!! important
     You must configure port forwarding on the router that the server is connecting to, except when the server is connecting to a proxy server. If you are using a proxy server, the proxy server must be
 	available and is allowed to accept inbound communication. Please see your router documentation for instructions on configuring port forwarding.
-#Server Core
+# Server Core
 RemotePlus utilizes a design pattern called Dependency Injection (DI) and Inversion of Control (IoC) for providing services to extensions in the system.
 Part of DI and IoC is to configure what services to give to the modules, and one of the important tenants of RemotePlus is flexability. RemotePlus loads one library that will configure the IoC container
 and initialize the server. We call this library the Server Core.
