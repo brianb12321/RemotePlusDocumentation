@@ -1,1 +1,11 @@
-site_name: My Docs
+site_name: RemotePlus Documentation
+theme: readthedocs
+nav:
+    - Home: index.md
+    - Conventions: Conventions.md
+    - About: About.md
+    - RemotePlusServer:
+        - Startup: RemotePlusServer/StartupProcess.md
+markdown_extensions:
+  - admonition
+  - smarty
